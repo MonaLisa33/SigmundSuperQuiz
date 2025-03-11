@@ -1,0 +1,7 @@
+{
+  "name": "quizSigmund",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
