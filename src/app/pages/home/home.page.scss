@@ -8,6 +8,16 @@
   transform: translateY(-50%);
 }
 
+#button1 {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #container strong {
   font-size: 20px;
   line-height: 26px;
