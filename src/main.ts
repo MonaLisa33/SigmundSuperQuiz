@@ -4,6 +4,10 @@ import { IonicRouteStrategy, provideIonicAngular } from '@ionic/angular/standalo
 
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
+import {add, addCircle, checkmark, trash} from 'ionicons/icons';
+import { addIcons } from 'ionicons';
+
+addIcons({addCircle, checkmark, trash});
 
 bootstrapApplication(AppComponent, {
   providers: [

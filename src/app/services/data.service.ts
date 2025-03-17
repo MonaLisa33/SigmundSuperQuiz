@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Quiz } from './Quiz';
+import { Quiz } from './quiz';
+import { Question } from './question';
 
 @Injectable({
   providedIn: 'root',
@@ -18,4 +19,20 @@ export class DataService {
       correct: 3,
     });
   }
+
+  public getNewQuestion() {
+    return {
+      id: '',
+      title: '',
+      a1: '',
+      a2: '',
+      a3: '',
+      a4: '',
+      correct: 0,
+    };
+  }
+
+  public getQuestion(id: string): Question | undefined {
+    return this.currentQuiz.questions.find((q) => q.id === id);
+  } 
 }
