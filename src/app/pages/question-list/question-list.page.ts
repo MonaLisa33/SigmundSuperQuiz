@@ -9,16 +9,30 @@ import {
   IonButton,
   IonButtons,
   IonBackButton,
-  IonIcon, IonList, IonItem, IonLabel, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/angular/standalone';
+  IonIcon,
+  IonList,
+  IonItem,
+  IonLabel,
+  IonItemSliding,
+  IonItemOptions,
+  IonItemOption,
+} from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
+import { Question } from 'src/app/services/question';
 
 @Component({
   selector: 'app-question-list',
   templateUrl: './question-list.page.html',
   styleUrls: ['./question-list.page.scss'],
   standalone: true,
-  imports: [IonItemOption, IonItemOptions, IonItemSliding, IonLabel, IonItem, IonList, 
+  imports: [
+    IonItemOption,
+    IonItemOptions,
+    IonItemSliding,
+    IonLabel,
+    IonItem,
+    IonList,
     IonIcon,
     IonBackButton,
     IonButtons,
@@ -32,18 +46,17 @@ import { DataService } from 'src/app/services/data.service';
   ],
 })
 export class QuestionListPage implements OnInit {
-
   private router = inject(Router);
   public data = inject(DataService);
-  
+
   constructor() {}
 
-  show(arg0: string) {
-this.router.navigate(['/question', arg0]);
- }
+  public show(arg0: string) {
+    this.router.navigate(['/question', arg0]);
+  }
 
- delete(arg0: string) {
-  //this.data.deleteQuestion(arg0);
+  public delete(arg0: Question) {
+    this.data.deleteQuestion(arg0);
   }
 
   ngOnInit() {}
