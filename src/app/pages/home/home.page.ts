@@ -21,4 +21,8 @@ export class HomePage {
   this.router.navigate(['/question-list']);
 }
 
+ngOnInit() {
+  this.data.loadQuiz();
+}
+
 }

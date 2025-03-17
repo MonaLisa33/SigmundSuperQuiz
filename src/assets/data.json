@@ -1,0 +1,51 @@
+{
+    "id": "InitialQuiz",
+    "quizName": "Städtequiz",
+    "questions": [
+        {
+            "id": "65bada99-a939-4b59-a00a-040ad3f4e55e",
+            "title": "Wie heißt die Hauptstadt von Deutschland?",
+            "a1": "Berlin",
+            "a2": "Hamburg",
+            "a3": "München",
+            "a4": "Köln",
+            "correct": 1
+        },
+        {
+            "id": "12c0bab0-1e73-4b54-9d89-e0ced92ee399",
+            "title": "Wie heißt die Hauptstadt von Frankreich?",
+            "a1": "Paris",
+            "a2": "Lyon",
+            "a3": "Marseille",
+            "a4": "Nizza",
+            "correct": 1
+        },
+        {
+            "id": "a45697ac-fbdd-422f-9872-ba89c23a286e",
+            "title": "Wie heißt die Hauptstadt von Italien?",
+            "a1": "Rom",
+            "a2": "Mailand",
+            "a3": "Neapel",
+            "a4": "Turin",
+            "correct": 1
+        },
+        {
+            "id": "f3b3b3b3-1b3b-4b3b-8b3b-3b3b3b3b3b3b",
+            "title": "Wie heißt die Hauptstadt von Spanien?",
+            "a1": "Madrid",
+            "a2": "Barcelona",
+            "a3": "Valencia",
+            "a4": "Sevilla",
+            "correct": 1
+        },
+        {
+            "id": "f3b3b3b3-1b3b-4b3b-8b3b-3b3b3b3b3b3b",
+            "title": "Wie heißt die Hauptstadt von England?",
+            "a1": "London",
+            "a2": "Manchester",
+            "a3": "Liverpool",
+            "a4": "Birmingham",
+            "correct": 1
+        }
+    ]
+}

@@ -37,5 +37,6 @@ ionViewWillLeave() {
   if (this.question.title.length>=3 && this.question.id == '0') {
     this.data.addQuestion(this.question);
   }
+  this.data.saveQuiz();
 }
 }
