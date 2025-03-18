@@ -1,0 +1,44 @@
+/* Wrapper für den Inhalt */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Flexbox für die Buttons */
+  .button-row {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /*  Antwort Buttons */
+  .button-col {
+    display: flex;
+    justify-content: center;  
+    margin-bottom: 10px;      
+  }
+  
+  /* Antwort Buttons gleich groß und untereinander */
+  ion-button {
+    width: 80%;  
+    margin: 10px 0; 
+  }
+  
+  /* Buttons für "Nächste Frage" und "Quiz beenden" */
+  .action-button {
+    width: 80%; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Zeilenumbruch für die Fragen */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

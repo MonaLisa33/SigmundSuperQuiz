@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
+import {IonHeader,IonToolbar, IonTitle, IonContent, IonButton,} from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 
@@ -10,19 +10,19 @@ import { DataService } from 'src/app/services/data.service';
   imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton],
 })
 export class HomePage {
-
   public data = inject(DataService);
   private router = inject(Router);
-  constructor() {
+  constructor() {}
+
+  showList() {
+    this.router.navigate(['/question-list']);
   }
 
+  startQuiz() {
+    this.router.navigate(['/quiz']);
+  }
 
- showList() {
-  this.router.navigate(['/question-list']);
-}
-
-ngOnInit() {
-  this.data.loadQuiz();
-}
-
+  ngOnInit() {
+    this.data.loadQuiz();
+  }
 }

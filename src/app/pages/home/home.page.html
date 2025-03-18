@@ -1,14 +1,28 @@
-<ion-header >
+<ion-header>
   <ion-toolbar>
     <ion-title> Das beste Quiz everrr! </ion-title>
   </ion-toolbar>
-
-   
-
-
-  <ion-content [fullscreen]="true">
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="content-wrapper">
+    <ion-button
+      shape="round"
+      color="primary"
+      expand="block"
+      fill="outline"
+      (click)="startQuiz()"
+    >
+      Quiz starten
+    </ion-button>
     <p>Anzahl der Fragen: {{data.currentQuiz.questions.length}}</p>
-    <ion-button shape="round" color="primary" expand="block" fill="outline" (click)="showList()">
+    <ion-button
+      shape="round"
+      color="primary"
+      expand="block"
+      fill="outline"
+      (click)="showList()"
+    >
       Fragen erstellen</ion-button
     >
-  </ion-content>
+  </div>
+</ion-content>

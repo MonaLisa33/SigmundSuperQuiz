@@ -22,8 +22,8 @@ export class DataService {
       a4: 'Dublin',
       correct: 3,
     });*/
-    //this.loadQuiz();
-    this.loadQuizFromJSON();
+    this.loadQuiz();
+    //this.loadQuizFromJSON();
   }
 
   public async loadQuiz() {
@@ -35,7 +35,7 @@ export class DataService {
         console.log('Loaded quiz', this.currentQuiz);
       }
     } catch (error) {
-      //console.error('Error loading quiz', error);
+      console.error('Error loading quiz', error);
     }
   }
 

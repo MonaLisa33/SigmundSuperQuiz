@@ -8,29 +8,62 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <br />
   <ion-title>
     <ion-item>
-      <ion-label position="fixed">Fragen-ID: {{question.id}} </ion-label> 
+      <ion-label position="fixed">Fragen-ID: {{question.id}} </ion-label>
       <ion-label position="fixed"></ion-label>
     </ion-item>
+  </ion-title>
+  <br />
+  <ion-title>
     <ion-item>
-      <ion-input label="Fragetext:" labelPlacement="fixed" type="text" [(ngModel)]="question.title"></ion-input>
+      <ion-input
+        label="Fragetext:"
+        labelPlacement="fixed"
+        type="text"
+        [(ngModel)]="question.title"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Antwort 1:" labelPlacement="fixed" type="text" [(ngModel)]="question.a1"></ion-input>
+      <ion-input
+        label="Antwort 1:"
+        labelPlacement="fixed"
+        type="text"
+        [(ngModel)]="question.a1"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Antwort 2:" labelPlacement="fixed" type="text" [(ngModel)]="question.a2"></ion-input>
+      <ion-input
+        label="Antwort 2:"
+        labelPlacement="fixed"
+        type="text"
+        [(ngModel)]="question.a2"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Antwort 3:" labelPlacement="fixed" type="text" [(ngModel)]="question.a3"></ion-input>
+      <ion-input
+        label="Antwort 3:"
+        labelPlacement="fixed"
+        type="text"
+        [(ngModel)]="question.a3"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Antwort 4:" labelPlacement="fixed" type="text" [(ngModel)]="question.a4"></ion-input>
+      <ion-input
+        label="Antwort 4:"
+        labelPlacement="fixed"
+        type="text"
+        [(ngModel)]="question.a4"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-input label="Korrekt:" labelPlacement="fixed" type="number" [(ngModel)]="question.correct"></ion-input>
+      <ion-input
+        label="Korrekt:"
+        labelPlacement="fixed"
+        type="number"
+        [(ngModel)]="question.correct"
+      ></ion-input>
     </ion-item>
   </ion-title>
 </ion-content>
-
